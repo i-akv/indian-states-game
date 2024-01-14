@@ -1,0 +1,97 @@
+body {
+  width: 96vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  overflow: hidden;
+}
+
+#canvas {
+  position: absolute;
+}
+
+#state_name {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  text-align: center;
+  background: transparent;
+  border: 1px solid white;
+  font-size: xx-large;
+  color: white;
+}
+
+#score_count_box {
+  position: absolute;
+  background: transparent;
+  color: white;
+  border: 0;
+  right: 100px;
+  top: 60px;
+  font-size: x-large;
+}
+
+#score_count {
+  width: 50px;
+  font-size: xx-large;
+  text-align: center;
+  background: transparent;
+  border: 0;
+  color: white;
+}
+
+#popup_container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  backdrop-filter: blur(10px);
+}
+
+#popup {
+  width: 200px;
+  height: 200px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: xx-large;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  #score_count_box {
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 70px;
+  }
+  #score_count {
+    color: red;
+    font-size: 70px;
+  }
+
+  #state_name {
+    right: 50%;
+    top: 10%;
+    transform: translateX(50%);
+    font-size: 70px;
+  }
+
+  #popup {
+    font-size: 70px;
+    gap: 0;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 100px -30px white;
+  }
+  #popup p {
+    margin: 0;
+  }
+}

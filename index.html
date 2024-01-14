@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>India States Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <img src="resources/india-map.jpg" hidden id="img" alt="india">
+    <input type="text" disabled id="state_name">
+    <div id="score_count_box">
+        <label for="score_count">Score: </label>
+        <input type="text" disabled value="0" id="score_count">
+    </div>
+    <canvas id="canvas"></canvas>
+    <div id="popup_container">
+        <div id="popup">
+
+            <p>Corrects : <span id="correct_count"></span></p>
+            <p>Incorrects : <span id="incorrect_count"></span></p>
+        </div>
+    </div>
+</body>
+<script src="./utils/point.js" type="text/javascript"></script>
+    <script src="./utils/state.js" type="text/javascript"></script>
+    <script src="./utils/map_editor.js" type="text/javascript"></script>
+    <script src="./script.js" type="text/javascript"></script>
+</html>
